@@ -24,7 +24,7 @@ const MovieGrid = (props) => {
         const params = {};
         switch (props.category) {
           case category.movie:
-            response = await tmdbApi.getMoviesList(movieType.upcoming, {
+            response = await tmdbApi.getMovieList(movieType.upcoming, {
               params,
             });
             break;
@@ -51,7 +51,7 @@ const MovieGrid = (props) => {
       };
       switch (props.category) {
         case category.movie:
-          response = await tmdbApi.getMoviesList(movieType.upcoming, {
+          response = await tmdbApi.getMovieList(movieType.upcoming, {
             params,
           });
           break;
