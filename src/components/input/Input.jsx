@@ -5,7 +5,7 @@ import "./input.scss";
 const Input = (props) => {
   return (
     <div>
-      <Input
+      <input
         type={props.type}
         placeholder={props.placeholder}
         value={props.value}
